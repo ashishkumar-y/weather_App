@@ -1,9 +1,5 @@
-import { useState } from 'react'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Weather from './components/Weather'
-import Footer from './components/Footer'
-
-
 
 function App() {
 
