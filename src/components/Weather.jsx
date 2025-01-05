@@ -61,7 +61,7 @@ const Weather = () => {
         <input type="text" placeholder='Enter city Name' value={city} onChange={handleChange} className='border pl-5 p-2 rounded-xl w-3/5 h-14 text-black shadow-lg' />
         <button onClick={handleClick} className='bg-blue-800  m-1 rounded-xl p-3 hover:bg-blue-700 font-bold h-14 w-14 flex items-center justify-center text-lg'><FaSearch /></button>
       </form>
-      <div className=' p-3 lg:w-2/5 my-auto  mx-auto h-fit min-h-96 rounded-3xl bg-box-img bg-cover '>
+      <div className=' p-3 lg:w-[600px] max-w-[600px] my-auto  mx-auto h-fit min-h-96 rounded-3xl bg-box-img bg-cover '>
 
 
 
@@ -72,7 +72,7 @@ const Weather = () => {
 
               <div className='mb-36'>
                 <h2 className='   font-bold text-4xl p-3'>{`${data.data.name}, ${data.data.sys.country} `}</h2>
-                <p>{data.data.weather[0].description}</p>
+                <p className='text-center'>{data.data.weather[0].description}</p>
               </div>
               {data.data.main.temp && <h1 className='font-bold text-5xl'>{`${Math.floor((data.data.main.temp - 273.15) * 10) / 10} °C`}</h1>}
 
@@ -103,7 +103,7 @@ const Weather = () => {
 
                 <div className=' m-auto'>
                   <h2 className='font-bold text-3xl p-3'>{`${data.data.name}, ${data.data.sys.country} `}</h2>
-                  <p>{data.data.weather[0].description}</p>
+                  <p className='text-center'>{data.data.weather[0].description}</p>
                 </div>
 
                 <img className='m-auto h-40 w-40' src={`http://openweathermap.org/img/wn/${data.data.weather[0].icon}@2x.png`} alt="" />
