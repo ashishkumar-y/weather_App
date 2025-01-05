@@ -61,7 +61,7 @@ const Weather = () => {
         <input type="text" placeholder='Enter city Name' value={city} onChange={handleChange} className='border pl-5 p-2 rounded-xl w-3/5 h-14 text-black shadow-lg' />
         <button onClick={handleClick} className='bg-blue-800  m-1 rounded-xl p-3 hover:bg-blue-700 font-bold h-14 w-14 flex items-center justify-center text-lg'><FaSearch /></button>
       </form>
-      <div className=' p-3 lg:w-[600px] max-w-[600px] my-auto  mx-auto h-fit min-h-96 rounded-3xl bg-box-img bg-cover '>
+      <div className=' p-3 sm:w-[600px] w-[300px]  max-w-[600px] my-auto  mx-auto h-fit min-h-96 rounded-3xl bg-box-img bg-cover '>
 
 
 
@@ -98,7 +98,7 @@ const Weather = () => {
 
 
             {/* mobile */}
-            <div className='sm:hidden flex flex-col w-full justify-center items-center '>
+            <div className=' mx-auto   sm:hidden flex flex-col  justify-center items-center '>
               <div className=" flex flex-col sm:w-1/2 h-full justify-between items-start p-3 m-3 w-full relative ">
 
                 <div className=' m-auto'>
