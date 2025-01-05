@@ -71,16 +71,16 @@ const Weather = () => {
             <div className=" hidden md:block sm:flex flex-col sm:w-1/2 h-full justify-between  items-start p-3 m-3 w-full relative ">
 
               <div className='mb-36'>
-                <h2 className='  font-bold text-3xl p-3'>{`${data.data.name}, ${data.data.sys.country} `}</h2>
+                <h2 className='   font-bold text-4xl p-3'>{`${data.data.name}, ${data.data.sys.country} `}</h2>
                 <p>{data.data.weather[0].description}</p>
               </div>
-              {data.data.main.temp && <h1 className=' font-bold text-5xl'>{`${Math.floor((data.data.main.temp - 273.15) * 10) / 10} °C`}</h1>}
+              {data.data.main.temp && <h1 className='font-bold text-5xl'>{`${Math.floor((data.data.main.temp - 273.15) * 10) / 10} °C`}</h1>}
 
             </div>
 
-            <div className="hidden sm:flex sm:flex-col h-full w-full sm:w-1/2 sm:justify-start sm:items-start pl-10">
+            <div className=" hidden sm:flex sm:flex-col h-full w-full sm:w-1/2 sm:justify-start sm:items-start pl-10">
               <img
-                className="h-40 w-40 mx-auto sm:mx-auto"
+                className="h-40 w-40 mx-auto sm:mx-auto "
                 src={`http://openweathermap.org/img/wn/${data.data.weather[0].icon}@2x.png`}
                 alt="Weather Icon"
               />
@@ -93,9 +93,7 @@ const Weather = () => {
               <span className=" p-2 w-full rounded-md">
                 {`Wind Speed : ${Math.round(data.data.wind.speed * 3.6)} km/h`}
               </span>
-              <span className=" p-2 w-full rounded-md">
-                {`Pressure : ${data.data.main.pressure} hPa`}
-              </span>
+       
             </div>
 
 
@@ -114,10 +112,10 @@ const Weather = () => {
 
               </div>
 
-              <div className=' space-x-3 p-3'>
+              <div className=''>
                 <span className='p-1 w-full'>{`Humidity : ${data.data.main.humidity} %`} </span> <br />
                 <span className=' p-1 w-full'>{`Wind Speed :  ${Math.round(data.data.wind.speed * 3.6)} km/h`}</span><br />
-                <span className='p-1 w-full'>{`Pressure : ${data.data.main.pressure} hPa`} </span><br />
+         
 
 
               </div>

@@ -8,11 +8,6 @@
   margin: 0%;
 }
 
-#root {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
 
 html,body{
   padding: 0;
@@ -21,16 +16,13 @@ html,body{
 
 body {
   height: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #222222;
   color: white;
 
 }
 
-.bg-img{
-  background-image: url('./assets/bg-img2.png');
-}
 
 .bg-box-img{
-  background-color: rgb(40, 36, 36);
-  background-image: url('./assets/bg-img3.png');
+
+  background: linear-gradient(120deg, #142850, #14305a, #143a64, #14456e, #135279, #126184, #10728f, #0e849a, #0c99a6, #0ab1b3, #07bfb4, #04ccb1);
 }

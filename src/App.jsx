@@ -1,6 +1,8 @@
 import Weather from './components/Weather'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { WiDaySunny, WiCloud } from 'react-icons/wi';
+
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
       <div className="fixed inset-0 bg-fixed bg-cover bg-img" aria-label="Background image"></div>
       <main className="relative  z-1   items-center justify-center ">
         <div className=" w-full border h-screen pb-0 overflow-hidden p-10 ">
+       
+               
           <Weather />
         </div>
       </main>
